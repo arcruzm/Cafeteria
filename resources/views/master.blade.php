@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-cafe">
+    <nav class="navbar navbar-expand-md navbar-cafe">
         <div class="container justify-content-center">
             <ul class="navbar-nav">
                 <li class="nav-item px-4 bg-light mx-2 my-1 rounded"><a class="nav-link text-dark font-weight-bold" href="{{ url('/') }}">Presentación</a></li>
