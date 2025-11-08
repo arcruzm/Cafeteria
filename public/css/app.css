@@ -9,3 +9,32 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+/* Custom site styles moved from inline attributes in master.blade.php */
+/* Page background */
+body {
+    background-color: #fefcef;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar cafe color (dark brown) */
+.navbar-cafe {
+    background-color: #6b3b1f !important;
+}
+
+/* Main content background */
+.content-bg {
+    background-color: #eeeeee;
+}
+
+/* Small accessibility tweak: ensure nav link weight matches previous inline class */
+.nav-link.font-weight-bold {
+    font-weight: 700;
+}
+
+footer {
+    background-color: beige;
+}
+
