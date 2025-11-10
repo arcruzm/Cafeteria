@@ -1,5 +1,5 @@
 @extends('master')
-@section('title', 'Presentación')
+@section('title', 'Pedidos')
 @section('content')
 
 @endsection
