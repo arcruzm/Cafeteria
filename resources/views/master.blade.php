@@ -9,6 +9,7 @@
 
 </head>
 <body>
+    
     <nav class="navbar navbar-expand-md navbar-cafe">
         <div class="container justify-content-center">
             <ul class="navbar-nav">
@@ -17,6 +18,8 @@
             </ul>
         </div>
     </nav>
+
+    @yield('titulo')
 
     <div class="container mt-4  content-bg">
         @yield('content')

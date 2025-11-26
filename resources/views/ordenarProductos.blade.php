@@ -1,5 +1,14 @@
 @extends('master')
 @section('title', 'ordenarProductos')
+
+@section('titulo')
+<div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+  <h1 class="col-8 align-self-start">Ordenar Productos</h1>
+  <a href="{{url('/generarPedido')}}"
+    class="btn btn-success btn-sm col-3 align-self-start">Ver Pedido</a>
+</div>
+@stop
+
 @section('content')
 <div class="table-responsive">
     <table class="table table-hover">
