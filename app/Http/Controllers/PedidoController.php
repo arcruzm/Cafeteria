@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Pedido;
 use App\Models\Ordenado;
 use App\Models\Producto;
+use App\Models\Detalle;
 
 class PedidoController extends Controller
 {
