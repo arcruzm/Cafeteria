@@ -15,6 +15,7 @@
             <ul class="navbar-nav">
                 <li class="nav-item px-4 bg-light mx-2 my-1 rounded"><a class="nav-link text-dark font-weight-bold" href="{{ url('/') }}">Presentación</a></li>
                 <li class="nav-item px-4 bg-light mx-2 my-1 rounded"><a class="nav-link text-dark font-weight-bold" href="{{ url('/ordenarProductos') }}">Pedidos</a></li>
+                <li class="nav-item px-4 bg-light mx-2 my-1 rounded"><a class="nav-link text-dark font-weight-bold" href="{{ url('/administrarPedidos') }}">Administrar Pedidos</a></li>
             </ul>
         </div>
     </nav>

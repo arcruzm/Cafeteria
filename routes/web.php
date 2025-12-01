@@ -20,3 +20,7 @@ Route::get('/ordenadoMas/{id}', [PedidoController::class, 'masCantidad']);
 Route::get('/ordenadoMenos/{id}', [PedidoController::class, 'menosCantidad']);
 
 Route::post('/grabarPedido', [PedidoController::class, 'grabarPedido']);
+
+// Agregar rutas para administrar/eliminar pedidos
+Route::get('/administrarPedidos', [PedidoController::class, 'administrarPedidos'])->name('administrar.pedidos');
+Route::delete('/administrarPedidos/{id}', [PedidoController::class, 'eliminarPedido'])->name('administrar.pedidos.eliminar');

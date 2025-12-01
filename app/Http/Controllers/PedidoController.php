@@ -77,4 +77,25 @@ class PedidoController extends Controller
         return redirect('/generarPedido');
     }
 
+    // Nuevo: mostrar lista de pedidos
+    public function administrarPedidos()
+    {
+        // cargar pedidos con conteo de detalles
+        $pedidos = Pedido::orderBy('fecha', 'desc')->get();
+        return view('administrarPedidos', compact('pedidos'));
+    }
+
+    // Nuevo: eliminar un pedido (y sus detalles)
+    public function eliminarPedido($id)
+    {
+        $pedido = Pedido::findOrFail($id);
+
+        // Eliminar detalles asociados
+        Detalle::where('pedido_id', $pedido->id)->delete();
+
+        $pedido->delete();
+
+        return redirect()->route('administrar.pedidos')->with('success', 'Pedido eliminado correctamente.');
+    }
+
 }
